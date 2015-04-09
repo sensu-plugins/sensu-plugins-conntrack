@@ -1,4 +1,4 @@
-#! /usr/bin/env ruby
+e #! /usr/bin/env ruby
 #  encoding: UTF-8
 #
 #   conntrack-metrics
@@ -27,6 +27,9 @@
 require 'sensu-plugin/metric/cli'
 require 'socket'
 
+#
+# Conntrack
+#
 class Conntrack < Sensu::Plugin::Metric::CLI::Graphite
   option :scheme,
          description: 'Metric naming scheme, text to prepend to .$parent.$child',
