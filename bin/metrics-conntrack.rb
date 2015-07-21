@@ -1,4 +1,4 @@
-e #! /usr/bin/env ruby
+#!/usr/bin/env ruby
 #  encoding: UTF-8
 #
 #   conntrack-metrics
@@ -42,7 +42,7 @@ class Conntrack < Sensu::Plugin::Metric::CLI::Graphite
          default: 'conntrack'
 
   def run
-    value = `conntrack -C #{config[:table]}`.strip
+    value = `conntrack -C #{config[:table]}  2>/dev/null`.strip
     timestamp = Time.now.to_i
 
     output config[:scheme], value, timestamp
