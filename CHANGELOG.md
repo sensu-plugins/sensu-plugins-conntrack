@@ -4,6 +4,17 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 This CHANGELOG follows the format listed at [Keep A Changelog](http://keepachangelog.com/)
 
 ## [Unreleased]
+### Removed
+- Ruby 1.9.3 support
+
+### Added
+- Ruby 2.3.0 support
+
+### Changed
+- Update to rubocop 0.40 and cleanup
+
+### Fixed
+- Fix typo
 
 ## [0.0.3] - 2015-07-14
 ### Changed
